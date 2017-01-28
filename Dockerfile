@@ -22,4 +22,4 @@ RUN touch ~/.config/pulse/cookie
 EXPOSE 6600 6680
 
 # Run
-CMD pulseaudio --start && printf "\n[spotify]\nusername = %s\npassword = %s\n" "$USER" "$PASS"  >> /etc/mopidy/mopidy.conf & mopidy --config /usr/share/mopidy/conf.d:/etc/mopidy/mopidy.conf local scan & mopidy --config /usr/share/mopidy/conf.d:/etc/mopidy/mopidy.conf
+CMD pulseaudio --start && printf "\n[spotify]\nusername = %s\npassword = %s\n" "$USER" "$PASS"  >> /etc/mopidy/mopidy.conf & mopidy --config /usr/share/mopidy/conf.d:/etc/mopidy/mopidy.conf local scan
