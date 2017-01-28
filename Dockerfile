@@ -10,7 +10,7 @@ mopidy mopidy-spotify mopidy-spotify-tunigo \
 pulseaudio pulseaudio-utils gstreamer1.0 gstreamer0.10-pulseaudio libsdl1.2debian \
 python python-pip
 
-RUN pip install mopidy-musicbox-webclient
+RUN pip install mopidy-musicbox-webclient Mopidy-Local-SQLite
 
 # Copy config files
 COPY default.pa /etc/pulse/default.pa
